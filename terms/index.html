@@ -4,54 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms & Conditions - Kinla Foods</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; }
-        h1 { color: #2e7d32; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        h2 { margin-top: 30px; color: #444; }
-        .date { font-style: italic; color: #666; }
-        .section { margin-bottom: 25px; }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+        
+        :root {
+            --brand-color: #B5B25C;
+        }
+
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: #fcfcfc;
+            color: #374151;
+        }
+
+        .brand-text { color: var(--brand-color); }
+        .brand-bg { background-color: var(--brand-color); }
+        
+        .content-card {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        }
+
+        h2 {
+            color: #111827;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 24px;
+            background-color: var(--brand-color);
+            border-radius: 4px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--brand-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
     </style>
 </head>
-<body>
-    <h1>Terms & Conditions</h1>
-    <p class="date">Effective Date: April 12, 2026</p>
+<body class="py-12 px-6">
 
-    <div class="section">
-        <h2>1. Acceptance of Terms</h2>
-        <p>By downloading or using the Kinla Foods app, these terms will automatically apply to you. You should make sure that you read them carefully before using the application.</p>
+    <div class="max-w-3xl mx-auto">
+        <!-- Back to Home -->
+        <a href="../" class="inline-flex items-center text-sm font-medium text-gray-400 hover:text-brand transition mb-8">
+            ← Back to Home
+        </a>
+
+        <div class="content-card p-8 md:p-12">
+            <header class="mb-10">
+                <div class="text-2xl font-black mb-2">
+                    <span class="text-black">Kinla</span><span class="brand-text"> Foods</span>
+                </div>
+                <h1 class="text-3xl font-bold text-gray-900 mb-2">Terms & Conditions</h1>
+                <p class="text-sm text-gray-400 font-medium">Effective Date: April 12, 2026</p>
+            </header>
+
+            <div class="prose prose-gray max-w-none text-gray-600 leading-relaxed">
+                <section>
+                    <h2>1. Acceptance of Terms</h2>
+                    <p>By downloading or using the Kinla Foods app, these terms will automatically apply to you. You should make sure that you read them carefully before using the application.</p>
+                </section>
+
+                <section>
+                    <h2>2. User Conduct & Safety</h2>
+                    <ul>
+                        <li><strong>Honest Usage:</strong> You agree to provide accurate information. Any fraudulent activity, including fake orders or payment manipulation, will result in an immediate ban.</li>
+                        <li><strong>Respectful Interaction:</strong> You must treat all Freelance Riders and Restaurant staff with respect. Harassment or verbal abuse will not be tolerated.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>3. Services & Payments</h2>
+                    <p><strong>Platform Role:</strong> Kinla Foods acts as a digital marketplace connecting customers, independent restaurants, and freelance riders. We are not a food manufacturer.</p>
+                    <p><strong>Fees:</strong> You agree to pay the displayed price for food items and the calculated delivery fee. Delivery fees are paid to riders for their logistics service.</p>
+                </section>
+
+                <section>
+                    <h2>4. Privacy-First Communication</h2>
+                    <p>For your safety, we provide an in-app calling feature. You agree to use this system for all order-related communication to keep your private phone number secure.</p>
+                </section>
+
+                <section>
+                    <h2>5. Limitation of Liability</h2>
+                    <p>Kinla Foods is not liable for the quality or preparation of food provided by independent restaurants. However, we take all reports seriously and will investigate any disputes submitted via the app.</p>
+                </section>
+
+                <section>
+                    <h2>6. Changes to Terms</h2>
+                    <p>We reserve the right to update these terms at any time. Continued use of the app after changes are posted constitutes your acceptance of the new terms.</p>
+                </section>
+            </div>
+
+            <footer class="mt-16 pt-8 border-t border-gray-100 text-center">
+                <p class="text-xs text-gray-400 font-medium tracking-wide uppercase">
+                    &copy; 2026 Kinla Foods Platform. All rights reserved.
+                </p>
+            </footer>
+        </div>
     </div>
 
-    <div class="section">
-        <h2>2. User Conduct & Safety</h2>
-        <ul>
-            <li><strong>Honest Usage:</strong> You agree to provide accurate information. Any fraudulent activity, including fake orders or payment manipulation, will result in an immediate and permanent ban.</li>
-            <li><strong>Respectful Interaction:</strong> You must treat all Freelance Riders and Restaurant staff with respect. Harassment, verbal abuse, or physical harm toward riders will not be tolerated and may be reported to local authorities.</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>3. Services & Payments</h2>
-        <p><strong>Platform Role:</strong> Kinla Foods acts as a digital marketplace connecting customers, independent restaurants, and freelance riders. We are not a food manufacturer or a direct employer of riders.</p>
-        <p><strong>Fees:</strong> You agree to pay the displayed price for food items and the calculated delivery fee. Delivery fees are paid to the riders for their logistics service and used for platform maintenance.</p>
-    </div>
-
-    <div class="section">
-        <h2>4. Privacy-First Communication</h2>
-        <p>For your safety, we provide an in-app WebRTC calling feature. You agree to use this system for all order-related communication. Attempting to bypass this system to obtain the private phone numbers of riders or other users is strictly discouraged for the safety and privacy of all parties.</p>
-    </div>
-
-    <div class="section">
-        <h2>5. Limitation of Liability</h2>
-        <p>Kinla Foods is not liable for the quality, safety, or preparation of food provided by independent restaurants. Furthermore, we are not liable for the independent actions of freelance riders. However, we take all reports seriously and will investigate any disputes submitted through the app.</p>
-    </div>
-
-    <div class="section">
-        <h2>6. Changes to Terms</h2>
-        <p>We reserve the right to update these terms at any time. Continued use of the app after changes are posted constitutes your acceptance of the new terms.</p>
-    </div>
-
-    <p style="margin-top: 50px; font-size: 0.9em; color: #888;">
-        &copy; 2026 Kinla Foods Platform.
-    </p>
 </body>
 </html>
