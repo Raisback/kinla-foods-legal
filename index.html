@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinla Foods | Dedicated Food Delivery for Kinniya</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+        
+        :root {
+            --brand-color: #B5B25C;
+        }
+
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: #ffffff;
+        }
+
+        .text-brand { color: var(--brand-color); }
+        .bg-brand { background-color: var(--brand-color); }
+        .border-brand { border-color: var(--brand-color); }
+        
+        .hero-section {
+            background-color: #ffffff;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .btn-google {
+            background-color: var(--brand-color);
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .btn-google:hover {
+            background-color: #a3a052;
+            transform: translateY(-2px);
+        }
+
+        .logo-text {
+            font-weight: 900;
+            letter-spacing: -1.5px;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+            <!-- Text Based Logo from Flutter App -->
+            <div class="logo-text text-3xl">
+                <span class="text-black">Kinla</span><span class="text-brand"> Foods</span>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <!-- Links updated to folder paths to avoid .html extension -->
+                <a href="support/" class="text-gray-500 hover:text-black transition">Support</a>
+                <a href="privacy/" class="text-gray-500 hover:text-black transition">Privacy</a>
+                <a href="#" class="bg-black text-white px-6 py-2.5 rounded-full hover:bg-gray-800 transition">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">
+                Fresh meals. <br>Delivered to <span class="text-brand">Kinniya.</span>
+            </h1>
+            <p class="text-gray-500 text-lg md:text-xl font-medium mb-12 max-w-2xl mx-auto">
+                Dedicated Food Delivery Platform For Our Kinniya. Simple, secure, and built for our community.
+            </p>
+            
+            <div class="flex flex-col items-center gap-6">
+                <!-- Sign in button styled like your Flutter Welcome Screen -->
+                <button class="btn-google w-full max-w-sm h-14 rounded-2xl text-white font-bold text-lg shadow-lg flex items-center justify-center gap-3">
+                    <i data-lucide="play" class="w-5 h-5 fill-current"></i>
+                    Get Started with Google
+                </button>
+                
+                <p class="text-xs text-gray-400">
+                    By getting started, you agree to our 
+                    <a href="terms/" class="underline hover:text-brand">Terms</a> & 
+                    <a href="privacy/" class="underline hover:text-brand">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Simplified Features -->
+    <section class="py-20 bg-gray-50 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
+            <div class="space-y-4">
+                <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-brand">
+                    <i data-lucide="map-pin"></i>
+                </div>
+                <h3 class="text-xl font-bold">Kinniya Focused</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Hyper-local delivery logic designed specifically for the streets and neighborhoods of Kinniya.</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-brand">
+                    <i data-lucide="shield"></i>
+                </div>
+                <h3 class="text-xl font-bold">Secure Access</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Easy authentication using your Google account. No complex passwords to remember.</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-brand">
+                    <i data-lucide="phone-forwarded"></i>
+                </div>
+                <h3 class="text-xl font-bold">Private Calling</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Integrated WebRTC calling allows you to reach your rider without sharing your private phone number.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Action Section -->
+    <section class="py-20 px-6 text-center">
+        <h2 class="text-2xl font-bold mb-8">Need Assistance?</h2>
+        <div class="flex flex-col md:flex-row justify-center gap-6">
+            <a href="https://wa.me/94751151218" class="flex items-center justify-center gap-2 text-gray-700 hover:text-brand transition">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                WhatsApp: +94 75 115 1218
+            </a>
+            <a href="mailto:tech.kinla@gmail.com" class="flex items-center justify-center gap-2 text-gray-700 hover:text-brand transition">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+                tech.kinla@gmail.com
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 px-6 bg-white border-t border-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="logo-text text-2xl">
+                    <span class="text-black">Kinla</span><span class="text-brand"> Foods</span>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-8 text-sm font-medium text-gray-400">
+                    <a href="support/" class="hover:text-black">Help Center</a>
+                    <a href="support/#deletion" class="hover:text-black">Delete Account</a>
+                    <a href="privacy/" class="hover:text-black">Privacy Policy</a>
+                    <a href="terms/" class="hover:text-black">Terms</a>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-50 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400 font-medium">
+                <p>&copy; 2026 Kinla Foods Platform. All rights reserved.</p>
+                <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                    System Status: Operational
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
